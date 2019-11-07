@@ -41,7 +41,6 @@ def validar():
 
     info.mainloop()
 
-
 ventana = tk.Tk()
 ventana.title('Inicio de Sesion')   #Titulo de la ventana
 ventana.geometry('380x200') #Dimension de la ventana (Ancho x Alto)

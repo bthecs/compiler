@@ -16,7 +16,6 @@ def sintax_passw(password):
 
 ## Sintax Username
 def sintax_user(username):
-
     if len(username) < 6 or len(username) > 12:
         print('Error: El nombre de usuario debe tener entre 6 a 12 caracteres')
         return False
