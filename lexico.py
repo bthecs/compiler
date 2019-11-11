@@ -16,7 +16,7 @@ def lex_passw(cadena):
 def lex_user(cadena):
     alfabeto = '[a-z]|[A-Z]'
     digito = '[0-9]'
-    caracter = '[.]|[@]'
+    caracter = '[.]|[@]|[ ]'
 
     us = re.compile(fr'\b{alfabeto}|{digito}|{caracter}\b')
     
