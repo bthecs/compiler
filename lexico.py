@@ -7,21 +7,26 @@ def lex_passw(cadena):
 
     pw = re.compile(fr'\b{alfabeto}|{digito}|{caracter}\b')
 
+    retorno = True
+
     for i in cadena:
         if (pw.findall(i)):
-            return True
+            pass
         else:
-            return False
+            retorno = False
+    return retorno
         
 def lex_user(cadena):
     alfabeto = '[a-z]|[A-Z]'
     digito = '[0-9]'
-    caracter = '[.]|[@]|[ ]'
 
-    us = re.compile(fr'\b{alfabeto}|{digito}|{caracter}\b')
+    us = re.compile(fr'\b{alfabeto}|{digito}\b')
     
+    retorno = True
+
     for i in cadena:
         if (us.findall(i)):
-            return True
+            pass
         else:
-            return False    
+            retorno = False
+    return retorno
