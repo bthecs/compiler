@@ -1,5 +1,6 @@
 import re
 
+
 def lex_passw(cadena):
     alfabeto = '[a-z]|[A-Z]'
     digito = '[0-9]'
@@ -14,13 +15,14 @@ def lex_passw(cadena):
         else:
             retorno = False
     return retorno
-        
+
+
 def lex_user(cadena):
     alfabeto = '[a-z]|[A-Z]'
     digito = '[0-9]'
 
     us = re.compile(fr'\b{alfabeto}|{digito}\b')
-    
+
     retorno = True
 
     for i in cadena:
